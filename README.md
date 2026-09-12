@@ -6,9 +6,7 @@ HTML/CSS-Webseitenprojekte, erstellt im Rahmen der Umschulung zum Fachinformatik
  
 - **guler-portfolio/** — Persönliche Portfolio-Webseite  
 - **gzk-pastel-site/** — Webseiten-Projekt im Pastell-Design  
-- **esbi-webseite/** — Webseiten-Projekt  
 - **spiele-arena/** — Interaktive Spiele-Sammlungsseite (HTML/CSS/JS)  
-- **html-grundlagen/** — HTML-Grundlagenübungen (Aufbau, Textformatierung, Profilseite)  
  
 ---  
 *Hinweis: Bei der Fehlerbehebung und Vervollständigung einzelner Dateien wurde Claude (Anthropic) unterstützend eingesetzt.*  
