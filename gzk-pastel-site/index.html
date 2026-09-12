@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>G.Z.K – Pastell Portfolio</title>
+    <link rel="stylesheet" href="gzk-style.css">
+    <script>
+        // Karanlık mod geçişi
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        // Sayfa yüklenince animasyon
+        window.onload = function() {
+            document.querySelector("header").classList.add("fade-in");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo-area">
+            <img src="logo-gzk.png" alt="G.Z.K Logo" class="logo">
+            <span class="logo-text">G.Z.K</span>
+        </div>
+
+        <!-- Basit Navigasyon -->
+        <nav class="main-nav">
+            <a href="#about">Über mich</a>
+            <a href="#hobbies">Hobbys</a>
+            <a href="#skills">Fähigkeiten</a>
+            <a href="#video">Video</a>
+            <a href="#adresse">Adresse</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <!-- Karanlık Mod Butonu -->
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Hero Bölümü -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Güler Zengin</h1>
+            <p>Webentwicklung · IT · Kreative Projekte</p>
+            <p class="hero-sub">Pastellfarben, klare Struktur und persönliche Note – dein digitales Zuhause.</p>
+        </div>
+        <div class="hero-image">
+            <img src="profil.jpeg" alt="Profilfoto" class="profil">
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="card" id="about">
+        <h2>Über mich</h2>
+        <p>Ich lebe in Deutschland und lerne IT mit Fokus auf Webentwicklung.</p>
+        <p>Ich interessiere mich für HTML, CSS, JavaScript und moderne Webtechnologien.</p>
+        <p>Mein Ziel ist es, als IT-Fachkraft zu arbeiten und Menschen mit digitalen Lösungen zu unterstützen.</p>
+    </section>
+
+    <section class="card" id="hobbies">
+        <h2>Meine Hobbys</h2>
+        <ul>
+            <li>Lesen und lebenslanges Lernen</li>
+            <li>Reisen und neue Kulturen entdecken</li>
+            <li>Programmieren und Web-Projekte erstellen</li>
+        </ul>
+    </section>
+
+    <section class="card" id="skills">
+        <h2>Fähigkeiten & Bewertung</h2>
+        <table>
+            <tr>
+                <th>Fähigkeit</th>
+                <th>Bewertung</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Gut</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Mittel</td>
+            </tr>
+            <tr>
+                <td>Organisation & Projektkoordination</td>
+                <td>Sehr gut</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="card" id="video">
+    <h2>Video Animation</h2>
+    <p>Ein kurzes Video als Inspiration und Motivation auf deinem Lernweg.</p>
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/HbxwFOsCySo"
+            title="Mein Video"
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+    <section class="card" id="adresse">
+        <h2>Adresseingabe</h2>
+        <p>Hier kannst du eine Beispieladresse für Formulare oder Tests erfassen.</p>
+        <form class="form-grid">
+            <div class="form-group">
+                <label>Straße und Hausnummer:</label>
+                <input type="text" placeholder="Beispielstraße 12">
+            </div>
+            <div class="form-group">
+                <label>PLZ und Ort:</label>
+                <input type="text" placeholder="73000 Musterstadt">
+            </div>
+            <div class="form-group">
+                <label>Land:</label>
+                <input type="text" placeholder="Deutschland">
+            </div>
+        </form>
+    </section>
+
+    <section class="card" id="contact">
+        <h2>Kontaktformular</h2>
+        <p>Schreib mir eine Nachricht – dieses Formular kannst du später echt mit Backend verbinden.</p>
+        <form class="contact-form">
+            <label>Name:</label>
+            <input type="text" placeholder="Ihr Name">
+
+            <label>E-Mail:</label>
+            <input type="email" placeholder="email@beispiel.de">
+
+            <label>Nachricht:</label>
+            <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+
+            <input type="submit" value="Senden">
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2025 G.Z.K – Güler Zengin</p>
+        <p>E-Mail: info@beispiel.de · Webentwicklung & IT</p>
+        <p class="footer-links">
+            <a href="https://htmlreference.io" target="_blank">HTML Reference</a> ·
+            <a href="https://cssreference.io" target="_blank">CSS Reference</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

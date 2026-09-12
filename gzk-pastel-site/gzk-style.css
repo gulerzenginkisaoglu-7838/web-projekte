@@ -1,0 +1,281 @@
+/* GENEL AYARLAR */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5EBDD; /* pastel bej */
+    color: #4A3B32;      /* soft kahve */
+    transition: background 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: #2B2B2B;
+    color: #F5EBDD;
+}
+
+.dark-mode .card {
+    background: #3A3A3A;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #444, #666);
+}
+
+.dark-mode footer {
+    background: #222;
+    color: #F5EBDD;
+}
+
+/* HEADER VE NAVİGASYON */
+header {
+    padding: 20px;
+    background: linear-gradient(135deg, #FADADD, #D6EADF); /* pastel pembe - mint */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* LOGO ALANI */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #A68D7C;
+}
+
+/* NAVBAR */
+.main-nav a {
+    text-decoration: none;
+    color: #4A3B32;
+    margin: 0 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.main-nav a:hover {
+    color: #A68D7C;
+    transform: translateY(-1px);
+}
+
+/* DARK MODE BUTON */
+.dark-mode-btn {
+    border: none;
+    background: #A68D7C;
+    color: #F5EBDD;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.dark-mode-btn:hover {
+    background: #8B7263;
+    transform: translateY(-1px);
+}
+
+/* HERO BÖLÜMÜ */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero-text p {
+    margin: 5px 0;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: #7A6454;
+}
+
+.hero-image .profil {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ANA CONTAINER */
+.container {
+    width: 85%;
+    margin: 20px auto 40px auto;
+}
+
+/* KART TASARIMI */
+.card {
+    background: #FFF9F3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    animation: slideUp 0.8s ease;
+}
+
+/* TABLO */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #D9C8B8;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #FCEBB2;
+}
+
+/* FORM GENEL */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #C9B7A5;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #A68D7C;
+    box-shadow: 0 0 4px rgba(166,141,124,0.6);
+}
+
+form input[type="submit"] {
+    margin-top: 12px;
+    background: #A68D7C;
+    color: #F5EBDD;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #8B7263;
+    transform: translateY(-1px);
+}
+
+/* FORM GRID (ADRES) */
+.form-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+}
+
+/* VIDEO WRAPPER */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 oran */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: #D6EADF;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #4A3B32;
+}
+
+.footer-links a {
+    color: #7A6454;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ANİMASYONLAR */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .hero-image .profil {
+        width: 130px;
+        height: 130px;
+    }
+}

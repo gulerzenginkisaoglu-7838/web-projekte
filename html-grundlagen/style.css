@@ -1,0 +1,125 @@
+/* GENEL AYARLAR */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4A90E2, #007AFF);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+header img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* NAVBAR */
+nav {
+    background: #1f1f1f;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4A90E2;
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* KART TASARIMI */
+.card {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: slideUp 1s ease;
+}
+
+/* TABLO */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+th {
+    background: #e8e8e8;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+form input[type="submit"] {
+    background: #007AFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #005BBB;
+}
+
+/* ANİMASYONLAR */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

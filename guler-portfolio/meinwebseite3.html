@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mein Profil – Güler Zengin</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Güler Zengin – Mein Profil</h1>
+</header>
+
+<nav>
+    <a href="#about">Über mich</a>
+    <a href="#hobbies">Hobbys</a>
+    <a href="#skills">Fähigkeiten</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="about">
+        <h2>Über mich</h2>
+        <p>Ich lebe in Deutschland und lerne IT.</p>
+        <p>Ich interessiere mich für Webentwicklung.</p>
+        <p>Mein Ziel ist es, als IT-Fachkraft zu arbeiten.</p>
+        <img src="https://via.placeholder.com/300" alt="Profilbild">
+    </div>
+
+    <div class="card" id="hobbies">
+        <h2>Meine Hobbys</h2>
+        <ul>
+            <li>Lesen</li>
+            <li>Reisen</li>
+            <li>Programmieren</li>
+        </ul>
+    </div>
+
+    <div class="card" id="skills">
+        <h2>Fähigkeiten & Bewertung</h2>
+        <table>
+            <tr>
+                <th>Fähigkeit</th>
+                <th>Bewertung</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Gut</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Mittel</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Textformatierung</h2>
+        <p><strong>Das ist fett.</strong></p>
+        <p><em>Das ist kursiv.</em></p>
+        <hr>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Kontaktformular</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text">
+
+            <label>E-Mail:</label>
+            <input type="email">
+
+            <label>Nachricht:</label>
+            <textarea rows="5"></textarea>
+
+            <input type="submit" value="Senden">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

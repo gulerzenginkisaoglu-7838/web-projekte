@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Esslinger Bildungsinitiative e.V.</title>
+    <link rel="stylesheet" href="esbi-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        window.onload = function() {
+            document.querySelector("header").classList.add("fade-in");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+    <img src="logo-esbi.jpeg" alt="Logo" class="logo">
+    <div class="logo-text-block">
+        <span class="logo-title">Esslinger Bildungsinitiative e.V.</span>
+        <span class="logo-subtitle">Bildung. Teilhabe. Zukunft.</span>
+    </div>
+</div>
+
+
+        <nav class="main-nav">
+            <a href="#start">Startseite</a>
+            <a href="#about">Über uns</a>
+            <a href="#projects">Projekte</a>
+            <a href="#offers">Angebote</a>
+            <a href="#contact">Kontakt</a>
+            <a href="#donate" class="nav-donate">Spenden</a>
+        </nav>
+
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <section class="hero" id="start">
+        <div class="hero-content">
+            <h1>Bildung stärkt unsere Zukunft.</h1>
+            <p>Die Esslinger Bildungsinitiative e.V. unterstützt Kinder, Jugendliche und Familien auf ihrem Bildungsweg – offen, divers und lebensnah.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">Projekte entdecken</a>
+                <a href="#donate" class="btn secondary">Jetzt unterstützen</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Nötr topluluk / eğitim fotoğrafını hero.jpg olarak aynı klasöre kaydet -->
+            <div class="hero-photo"></div>
+        </div>
+    </section>
+</header>
+
+<main>
+
+    <section class="section light" id="about">
+        <div class="container">
+            <h2>Über uns</h2>
+            <p>
+                Die <strong>Esslinger Bildungsinitiative e.V.</strong> ist ein gemeinnütziger Verein mit Sitz in Esslingen am Neckar.
+                Unser Ziel ist es, Bildungschancen zu stärken, soziale Teilhabe zu fördern und Menschen auf ihrem Lernweg zu begleiten.
+            </p>
+            <p>
+                Wir arbeiten mit Familien, Kindern, Jugendlichen und Erwachsenen – unabhängig von Herkunft, Sprache oder sozialem Status.
+                Bildung verstehen wir als gemeinsamen Weg, der Mut, Unterstützung und verlässliche Strukturen braucht.
+            </p>
+
+            <div class="three-columns">
+                <div class="info-card">
+                    <h3>Unsere Werte</h3>
+                    <ul>
+                        <li>Respekt und Vielfalt</li>
+                        <li>Chancengerechtigkeit</li>
+                        <li>Transparenz und Verlässlichkeit</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Unsere Schwerpunkte</h3>
+                    <ul>
+                        <li>Sprachförderung & Deutschkurse</li>
+                        <li>Hausaufgaben- & Lernbegleitung</li>
+                        <li>Elternarbeit & Beratung</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Unser Standort</h3>
+                    <p>Olgastr. 25<br>73728 Esslingen am Neckar</p>
+                    <p>E-Mail: <a href="mailto:info@esbi-ev.com">info@esbi-ev.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2>Projekte</h2>
+            <p>Mit unseren Projekten schaffen wir Räume für Lernen, Begegnung und persönliches Wachstum.</p>
+
+            <div class="cards-grid">
+                <article class="project-card">
+                    <h3>Hausaufgabenhilfe & Lernbegleitung</h3>
+                    <p>Individuelle Unterstützung für Schüler:innen bei Hausaufgaben, Prüfungen und Lernorganisation.</p>
+                    <ul>
+                        <li>Grundschule bis Oberstufe</li>
+                        <li>Kleine Gruppen und Einzelangebote</li>
+                        <li>Stärkung von Motivation und Selbstvertrauen</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <h3>Sprachförderung & Deutschkurse</h3>
+                    <p>Deutsch lernen in einem wertschätzenden Umfeld – für Kinder, Jugendliche und Erwachsene.</p>
+                    <ul>
+                        <li>Konversationsgruppen</li>
+                        <li>Alltagssprache & Berufssprache</li>
+                        <li>Praktische Übungen und Materialien</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <h3>Projekte für Frauen</h3>
+                    <p>Räume für Austausch, Empowerment und berufliche Orientierung für Frauen mit und ohne Migrationserfahrung.</p>
+                    <ul>
+                        <li>Gruppentreffen & Workshops</li>
+                        <li>Berufsorientierung & Beratung</li>
+                        <li>Netzwerktreffen</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <h3>Digitale Bildung</h3>
+                    <p>Unterstützung beim Einstieg in die digitale Welt – für Schule, Alltag und Beruf.</p>
+                    <ul>
+                        <li>Grundlagen am Computer</li>
+                        <li>Online-Lernen & Medienkompetenz</li>
+                        <li>Begleitung bei digitalen Formularen</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section light" id="offers">
+        <div class="container">
+            <h2>Angebote</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Für Kinder & Jugendliche</h3>
+                    <ul>
+                        <li>Hausaufgabenbetreuung</li>
+                        <li>Lernwerkstätten</li>
+                        <li>Ferienprojekte</li>
+                    </ul>
+
+                    <h3>Für Eltern & Familien</h3>
+                    <ul>
+                        <li>Elternabende und Infoveranstaltungen</li>
+                        <li>Beratung im Bildungsalltag</li>
+                        <li>Begleitung bei Schulgesprächen</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Für Ehrenamtliche & Partner</h3>
+                    <ul>
+                        <li>Begleitung und Schulungen für Ehrenamtliche</li>
+                        <li>Kooperation mit Schulen, Kitas und Trägern</li>
+                        <li>Gemeinsame Projekte für mehr Bildungsgerechtigkeit</li>
+                    </ul>
+                    <p>Wir freuen uns über neue Kooperationen, Ideen und Menschen, die sich engagieren möchten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <p>Haben Sie Fragen zu unseren Projekten oder möchten Sie mit uns zusammenarbeiten?</p>
+                <p><strong>Esslinger Bildungsinitiative e.V.</strong><br>
+                   Olgastr. 25<br>
+                   73728 Esslingen am Neckar</p>
+                <p>E-Mail: <a href="mailto:info@esbi-ev.com">info@esbi-ev.com</a></p>
+
+                <h3>Adresseingabe (Beispielformular)</h3>
+                <form class="address-form">
+                    <label>Straße und Hausnummer:</label>
+                    <input type="text" placeholder="Olgastr. 25">
+                    <label>PLZ und Ort:</label>
+                    <input type="text" placeholder="73728 Esslingen am Neckar">
+                    <label>Land:</label>
+                    <input type="text" placeholder="Deutschland">
+                </form>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Kontaktformular</h3>
+                <form class="contact-form">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Ihr Name">
+
+                    <label>E-Mail:</label>
+                    <input type="email" placeholder="email@beispiel.de">
+
+                    <label>Betreff:</label>
+                    <input type="text" placeholder="Thema Ihrer Nachricht">
+
+                    <label>Nachricht:</label>
+                    <textarea rows="6" placeholder="Ihre Nachricht an uns"></textarea>
+
+                    <input type="submit" value="Senden">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section light" id="donate">
+        <div class="container donate-section">
+            <div>
+                <h2>Spenden</h2>
+                <p>
+                    Mit Ihrer Spende unterstützen Sie direkt unsere Bildungsangebote und Projekte für Kinder,
+                    Jugendliche und Familien in Esslingen.
+                </p>
+                <p>Gerne stellen wir Ihnen eine Spendenbescheinigung aus.</p>
+            </div>
+            <div class="donate-box">
+                <h3>Spendenkonto (Beispiel)</h3>
+                <p><strong>Esslinger Bildungsinitiative e.V.</strong></p>
+                <p>IBAN: DE00 0000 0000 0000 0000 00<br>
+                   BIC: ABCDDEFFXXX<br>
+                   Verwendungszweck: Spende Bildung</p>
+                <p>Oder kontaktieren Sie uns unter:<br>
+                   <a href="mailto:info@esbi-ev.com">info@esbi-ev.com</a></p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2025 Esslinger Bildungsinitiative e.V.</p>
+        <p>Olgastr. 25 · 73728 Esslingen am Neckar · E-Mail: <a href="mailto:info@esbi-ev.com">info@esbi-ev.com</a></p>
+        <p class="footer-links">
+            <a href="#start">Startseite</a> ·
+            <a href="#about">Über uns</a> ·
+            <a href="#projects">Projekte</a> ·
+            <a href="#contact">Kontakt</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

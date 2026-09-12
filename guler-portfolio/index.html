@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Güler Zengin – Professionelles Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Karanlık mod geçişi
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        // Sayfa yüklenince animasyon
+        window.onload = function() {
+            document.querySelector("header").classList.add("fade-in");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="profil.jpeg" alt="Profilfoto" class="profil">
+    <h1>Güler Zengin</h1>
+    <p>Webentwicklung | IT | Kreative Projekte</p>
+    <button onclick="toggleDarkMode()">🌙 Karanlık Mod</button>
+</header>
+
+<nav>
+    <a href="#about">Über mich</a>
+    <a href="#hobbies">Hobbys</a>
+    <a href="#skills">Fähigkeiten</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<div class="container">
+    <section class="card" id="about">
+        <h2>Über mich</h2>
+        <p>Ich lebe in Deutschland und lerne IT.</p>
+        <p>Ich interessiere mich für Webentwicklung.</p>
+        <p>Mein Ziel ist es, als IT-Fachkraft zu arbeiten.</p>
+    </section>
+
+    <section class="card" id="hobbies">
+        <h2>Meine Hobbys</h2>
+        <ul>
+            <li>Lesen</li>
+            <li>Reisen</li>
+            <li>Programmieren</li>
+        </ul>
+    </section>
+
+    <section class="card" id="skills">
+        <h2>Fähigkeiten & Bewertung</h2>
+        <table>
+            <tr>
+                <th>Fähigkeit</th>
+                <th>Bewertung</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Gut</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Mittel</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>Textformatierung</h2>
+        <p><strong>Das ist fett.</strong></p>
+        <p><em>Das ist kursiv.</em></p>
+        <hr>
+    </section>
+
+    <section class="card" id="contact">
+        <h2>Kontaktformular</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text">
+
+            <label>E-Mail:</label>
+            <input type="email">
+
+            <label>Nachricht:</label>
+            <textarea rows="5"></textarea>
+
+            <input type="submit" value="Senden">
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
